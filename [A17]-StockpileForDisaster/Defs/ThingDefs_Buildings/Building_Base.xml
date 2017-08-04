@@ -66,23 +66,4 @@
     <canOverlapZones>false</canOverlapZones>
   </ThingDef>
   
-  <!-- /////////////////////////For other Mods -->
-  
-  <ThingDef Name="EntityListCompBase" Abstract="True">
-    <comps>
-      <li Class="StockpileForDisaster.EntityListCompDef">
-        <compClass>StockpileForDisaster.EntityListComp</compClass>
-        <listType>TypeOnlyRecieve</listType>
-        <nodeDef>RecieveRoot</nodeDef>
-        <canDisplayCategorys>
-          <li>CategoryMale</li>
-          <li>CategoryFemale</li>
-          <li>CategoryPets</li>
-        </canDisplayCategorys>
-      </li>
-    </comps>
-  </ThingDef>
-  
-
-  
 </Defs>
