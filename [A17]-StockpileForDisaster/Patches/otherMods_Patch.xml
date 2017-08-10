@@ -68,4 +68,241 @@
       </li>
     </operations>
   </Operation>
+  
+  
+  <!-- Storage Solutions/////////////////////////////////// -->
+  <!--<Operation Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+      <li Class="PatchOperationTest">
+        <xpath>*/ThingDef[defName="CCPSS_NestingBox"]</xpath>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>*/ThingDef[defName="CCPSS_NestingBox"]/comps</xpath>
+        <Value>
+          <li Class="StockpileForDisaster.EntityListCompDef">
+            <compClass>StockpileForDisaster.EntityListComp</compClass>
+            <listType>TypeOnlyRecieve</listType>
+            <nodeDef>RecieveRoot</nodeDef>
+            <canDisplayCategorys>
+              <li>CategoryMale</li>
+              <li>CategoryFemale</li>
+              <li>CategoryPets</li>
+            </canDisplayCategorys>
+          </li>
+         </Value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>*/ThingDef[defName="CCPSS_NestingBox"]/inspectorTabs</xpath>
+        <Value><li>StockpileForDisaster.ITab_Restrict</li></Value>
+      </li>
+      
+      <li Class="PatchOperationTest">
+        <xpath>*/ThingDef[defName="CCPSS_MedicineCabinet"]</xpath>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>*/ThingDef[defName="CCPSS_MedicineCabinet"]/comps</xpath>
+        <Value>
+          <li Class="StockpileForDisaster.EntityListCompDef">
+            <compClass>StockpileForDisaster.EntityListComp</compClass>
+            <listType>TypeOnlyRecieve</listType>
+            <nodeDef>RecieveRoot</nodeDef>
+            <canDisplayCategorys>
+              <li>CategoryMale</li>
+              <li>CategoryFemale</li>
+              <li>CategoryPets</li>
+            </canDisplayCategorys>
+          </li>
+         </Value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>*/ThingDef[defName="CCPSS_MedicineCabinet"]/inspectorTabs</xpath>
+        <Value><li>StockpileForDisaster.ITab_Restrict</li></Value>
+      </li>
+      
+      <li Class="PatchOperationTest">
+        <xpath>*/ThingDef[defName="CCPSS_Crate"]</xpath>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>*/ThingDef[defName="CCPSS_Crate"]/comps</xpath>
+        <Value>
+          <li Class="StockpileForDisaster.EntityListCompDef">
+            <compClass>StockpileForDisaster.EntityListComp</compClass>
+            <listType>TypeOnlyRecieve</listType>
+            <nodeDef>RecieveRoot</nodeDef>
+            <canDisplayCategorys>
+              <li>CategoryMale</li>
+              <li>CategoryFemale</li>
+              <li>CategoryPets</li>
+            </canDisplayCategorys>
+          </li>
+         </Value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>*/ThingDef[defName="CCPSS_Crate"]/inspectorTabs</xpath>
+        <Value><li>StockpileForDisaster.ITab_Restrict</li></Value>
+      </li>
+      
+      <li Class="PatchOperationTest">
+        <xpath>*/ThingDef[defName="CCPSS_Shelf"]</xpath>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>*/ThingDef[defName="CCPSS_Shelf"]/comps</xpath>
+        <Value>
+          <li Class="StockpileForDisaster.EntityListCompDef">
+            <compClass>StockpileForDisaster.EntityListComp</compClass>
+            <listType>TypeOnlyRecieve</listType>
+            <nodeDef>RecieveRoot</nodeDef>
+            <canDisplayCategorys>
+              <li>CategoryMale</li>
+              <li>CategoryFemale</li>
+              <li>CategoryPets</li>
+            </canDisplayCategorys>
+          </li>
+         </Value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>*/ThingDef[defName="CCPSS_Shelf"]/inspectorTabs</xpath>
+        <Value><li>StockpileForDisaster.ITab_Restrict</li></Value>
+      </li>
+      
+      <li Class="PatchOperationTest">
+        <xpath>*/ThingDef[defName="CCPSS_LongShelf"]</xpath>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>*/ThingDef[defName="CCPSS_LongShelf"]/comps</xpath>
+        <Value>
+          <li Class="StockpileForDisaster.EntityListCompDef">
+            <compClass>StockpileForDisaster.EntityListComp</compClass>
+            <listType>TypeOnlyRecieve</listType>
+            <nodeDef>RecieveRoot</nodeDef>
+            <canDisplayCategorys>
+              <li>CategoryMale</li>
+              <li>CategoryFemale</li>
+              <li>CategoryPets</li>
+            </canDisplayCategorys>
+          </li>
+         </Value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>*/ThingDef[defName="CCPSS_LongShelf"]/inspectorTabs</xpath>
+        <Value><li>StockpileForDisaster.ITab_Restrict</li></Value>
+      </li>
+      
+      <li Class="PatchOperationTest">
+        <xpath>*/ThingDef[defName="CCPSS_Rack"]</xpath>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>*/ThingDef[defName="CCPSS_Rack"]/comps</xpath>
+        <Value>
+          <li Class="StockpileForDisaster.EntityListCompDef">
+            <compClass>StockpileForDisaster.EntityListComp</compClass>
+            <listType>TypeOnlyRecieve</listType>
+            <nodeDef>RecieveRoot</nodeDef>
+            <canDisplayCategorys>
+              <li>CategoryMale</li>
+              <li>CategoryFemale</li>
+              <li>CategoryPets</li>
+            </canDisplayCategorys>
+          </li>
+         </Value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>*/ThingDef[defName="CCPSS_Rack"]/inspectorTabs</xpath>
+        <Value><li>StockpileForDisaster.ITab_Restrict</li></Value>
+      </li>
+      
+      <li Class="PatchOperationTest">
+        <xpath>*/ThingDef[defName="CCPSS_LongRack"]</xpath>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>*/ThingDef[defName="CCPSS_LongRack"]/comps</xpath>
+        <Value>
+          <li Class="StockpileForDisaster.EntityListCompDef">
+            <compClass>StockpileForDisaster.EntityListComp</compClass>
+            <listType>TypeOnlyRecieve</listType>
+            <nodeDef>RecieveRoot</nodeDef>
+            <canDisplayCategorys>
+              <li>CategoryMale</li>
+              <li>CategoryFemale</li>
+              <li>CategoryPets</li>
+            </canDisplayCategorys>
+          </li>
+         </Value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>*/ThingDef[defName="CCPSS_LongRack"]/inspectorTabs</xpath>
+        <Value><li>StockpileForDisaster.ITab_Restrict</li></Value>
+      </li>
+      
+      <li Class="PatchOperationTest">
+        <xpath>*/ThingDef[defName="CCPSS_ResourceRack"]</xpath>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>*/ThingDef[defName="CCPSS_ResourceRack"]/comps</xpath>
+        <Value>
+          <li Class="StockpileForDisaster.EntityListCompDef">
+            <compClass>StockpileForDisaster.EntityListComp</compClass>
+            <listType>TypeOnlyRecieve</listType>
+            <nodeDef>RecieveRoot</nodeDef>
+            <canDisplayCategorys>
+              <li>CategoryMale</li>
+              <li>CategoryFemale</li>
+              <li>CategoryPets</li>
+            </canDisplayCategorys>
+          </li>
+         </Value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>*/ThingDef[defName="CCPSS_ResourceRack"]/inspectorTabs</xpath>
+        <Value><li>StockpileForDisaster.ITab_Restrict</li></Value>
+      </li>
+      
+      <li Class="PatchOperationTest">
+        <xpath>*/ThingDef[defName="CCPSS_Strongbox"]</xpath>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>*/ThingDef[defName="CCPSS_Strongbox"]/comps</xpath>
+        <Value>
+          <li Class="StockpileForDisaster.EntityListCompDef">
+            <compClass>StockpileForDisaster.EntityListComp</compClass>
+            <listType>TypeOnlyRecieve</listType>
+            <nodeDef>RecieveRoot</nodeDef>
+            <canDisplayCategorys>
+              <li>CategoryMale</li>
+              <li>CategoryFemale</li>
+              <li>CategoryPets</li>
+            </canDisplayCategorys>
+          </li>
+         </Value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>*/ThingDef[defName="CCPSS_Strongbox"]/inspectorTabs</xpath>
+        <Value><li>StockpileForDisaster.ITab_Restrict</li></Value>
+      </li>
+      
+      <li Class="PatchOperationTest">
+        <xpath>*/ThingDef[defName="CCPSS_LargeStrongbox"]</xpath>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>*/ThingDef[defName="CCPSS_LargeStrongbox"]/comps</xpath>
+        <Value>
+          <li Class="StockpileForDisaster.EntityListCompDef">
+            <compClass>StockpileForDisaster.EntityListComp</compClass>
+            <listType>TypeOnlyRecieve</listType>
+            <nodeDef>RecieveRoot</nodeDef>
+            <canDisplayCategorys>
+              <li>CategoryMale</li>
+              <li>CategoryFemale</li>
+              <li>CategoryPets</li>
+            </canDisplayCategorys>
+          </li>
+         </Value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>*/ThingDef[defName="CCPSS_LargeStrongbox"]/inspectorTabs</xpath>
+        <Value><li>StockpileForDisaster.ITab_Restrict</li></Value>
+      </li>
+    </operations>
+  </Operation>-->
 </Patch>

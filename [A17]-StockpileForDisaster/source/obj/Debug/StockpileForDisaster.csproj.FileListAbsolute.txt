@@ -8,3 +8,8 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorld\modbackup\source\bin\debu
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\modbackup\source\obj\Debug\StockpileForDisaster.csprojResolveAssemblyReference.cache
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\modbackup\source\obj\Debug\StockpileForDisaster.dll
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\modbackup\source\obj\Debug\StockpileForDisaster.pdb
+C:\githubLocal\rim-A17-StockpileForDisaster\[A17]-StockpileForDisaster\source\bin\debug\StockpileForDisaster.dll
+C:\githubLocal\rim-A17-StockpileForDisaster\[A17]-StockpileForDisaster\source\bin\debug\StockpileForDisaster.pdb
+C:\githubLocal\rim-A17-StockpileForDisaster\[A17]-StockpileForDisaster\source\obj\Debug\StockpileForDisaster.csprojResolveAssemblyReference.cache
+C:\githubLocal\rim-A17-StockpileForDisaster\[A17]-StockpileForDisaster\source\obj\Debug\StockpileForDisaster.dll
+C:\githubLocal\rim-A17-StockpileForDisaster\[A17]-StockpileForDisaster\source\obj\Debug\StockpileForDisaster.pdb

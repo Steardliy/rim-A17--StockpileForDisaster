@@ -52,7 +52,7 @@ namespace StockpileForDisaster
         {
             Text.Font = GameFont.Tiny;
             float btHeight = 24f;
-            Rect buttonRect1 = new Rect(baseRect.x, baseRect.y - btHeight - 2f, 160f , 24f);
+            Rect buttonRect1 = new Rect(baseRect.x, baseRect.y - btHeight - 2f, 140f , 24f);
             if(Widgets.ButtonText(buttonRect1, "DefaultEntityListSettingsButton".Translate(), true, false, true))
             {
                 RestrictedEntityManager.DefaultCopyFrom(filter);
