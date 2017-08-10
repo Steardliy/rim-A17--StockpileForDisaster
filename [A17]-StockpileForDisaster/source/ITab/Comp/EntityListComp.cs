@@ -86,6 +86,10 @@ namespace StockpileForDisaster
                 this.label = propDef.listType.label;
                 this.description = propDef.listType.description;
             }
+            if (!filter.IsLoaded)
+            {
+                RestrictedEntityManager.DefaultPasteTo(filter);
+            }
             base.PostSpawnSetup(respawningAfterLoad);
         }
         public override void PostDeSpawn(Map map)

@@ -19,8 +19,8 @@ namespace StockpileForDisaster
 
         public static IEnumerable<Gizmo> CopyPasteRestrictSettingsGizmo(IEntityFilter filter)
         {
-            yield return copyGizmo(filter);
-            yield return pasteGizmo(filter);
+            yield return CopyGizmo(filter);
+            yield return PasteGizmo(filter);
         }
         public static void CopyFrom(IEntityFilter filter)
         {
@@ -28,12 +28,12 @@ namespace StockpileForDisaster
         }
         public static void PasteTo(IEntityFilter filter)
         {
-            if(filter != null && storedSetting != null)
+            if (filter != null)
             {
                 filter.CopyFrom(storedSetting);
             }
         }
-        private static Gizmo copyGizmo(IEntityFilter filter)
+        private static Gizmo CopyGizmo(IEntityFilter filter)
         {
             Command_Action copyGizmo = new Command_Action();
             copyGizmo.icon = copyGizmoIcon;
@@ -45,7 +45,7 @@ namespace StockpileForDisaster
 
             return copyGizmo;
         }
-        private static Gizmo pasteGizmo(IEntityFilter filter)
+        private static Gizmo PasteGizmo(IEntityFilter filter)
         {
             Command_Action pasteGizmo = new Command_Action();
             pasteGizmo.icon = pasteGizmoIcon;

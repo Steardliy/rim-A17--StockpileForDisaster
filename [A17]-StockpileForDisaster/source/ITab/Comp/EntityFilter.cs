@@ -8,6 +8,14 @@ namespace StockpileForDisaster
 {
     class EntityFilter : IEntityFilter, IExposable, IRescriction
     {
+        private bool loaded = false;
+        public bool IsLoaded
+        {
+            get
+            {
+                return loaded;
+            }
+        }
         private bool vaild = true;
         private HashSet<Thing> allowedEntityList = new HashSet<Thing>();
         private HashSet<SpecialEntityFilterDef> forbiddenSpFilterList = new HashSet<SpecialEntityFilterDef>();
@@ -84,7 +92,7 @@ namespace StockpileForDisaster
 
         public void ExposeData()
         {
-            Scribe_Values.Look<bool>(ref this.vaild, "vaild", false);
+            Scribe_Values.Look<bool>(ref this.vaild, "vaild", true);
             Scribe_Collections.Look<Thing>(ref this.allowedEntityList, false, "allowedEntityList", LookMode.Reference);
             Scribe_Collections.Look<SpecialEntityFilterDef>(ref this.forbiddenSpFilterList, "forbiddenSpFilterList", LookMode.Def);
             
@@ -92,6 +100,8 @@ namespace StockpileForDisaster
                 forbiddenSpFilterList = new HashSet<SpecialEntityFilterDef>();
             if (allowedEntityList == null)
                 allowedEntityList = new HashSet<Thing>();
+
+            this.loaded = true;
         }
         public ISlotGroupParent GetSlotGroupParent()
         {
@@ -108,6 +118,10 @@ namespace StockpileForDisaster
 
         public void CopyFrom(IEntityFilter from)
         {
+            if(from == null)
+            {
+                return;
+            }
             this.vaild = from.IsVaild();
             this.allowedEntityList.Clear();
             foreach (var a in from.GetAllowedEntityList())

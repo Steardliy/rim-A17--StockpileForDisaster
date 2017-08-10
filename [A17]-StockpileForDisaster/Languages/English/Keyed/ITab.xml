@@ -1,6 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <ITabRestrict>Restriction</ITabRestrict>
+	<ITabRestrict>Restriction</ITabRestrict>
+
+	<DefaultEntityListSettingsButton>Set default</DefaultEntityListSettingsButton>
 
 </LanguageData>

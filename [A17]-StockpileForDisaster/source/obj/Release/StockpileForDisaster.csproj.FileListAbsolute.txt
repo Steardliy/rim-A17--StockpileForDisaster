@@ -4,3 +4,6 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\[A17]-StockpileForDi
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\modbackup\source\bin\Release\StockpileForDisaster.dll
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\modbackup\source\obj\Release\StockpileForDisaster.csprojResolveAssemblyReference.cache
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\modbackup\source\obj\Release\StockpileForDisaster.dll
+C:\githubLocal\rim-A17-StockpileForDisaster\[A17]-StockpileForDisaster\source\obj\Release\StockpileForDisaster.csprojResolveAssemblyReference.cache
+C:\githubLocal\rim-A17-StockpileForDisaster\[A17]-StockpileForDisaster\source\obj\Release\StockpileForDisaster.dll
+C:\githubLocal\rim-A17-StockpileForDisaster\[A17]-StockpileForDisaster\source\bin\Release\StockpileForDisaster.dll

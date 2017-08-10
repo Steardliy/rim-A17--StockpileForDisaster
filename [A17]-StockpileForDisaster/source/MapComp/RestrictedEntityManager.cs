@@ -7,9 +7,25 @@ namespace StockpileForDisaster
 {
     class RestrictedEntityManager : MapComponent
     {
+        private const int errorKey = 525455533;
+
         private bool sectionFlag = true;
         private HashSet<IRescriction> registeredStorageList = new HashSet<IRescriction>();
         private Dictionary<Thing, bool> tmpList;
+
+        private static EntityFilter defaultSettings = new EntityFilter();
+        
+        public static void DefaultCopyFrom(IEntityFilter filter)
+        {
+            RestrictedEntityManager.defaultSettings.CopyFrom(filter);
+        }
+        public static void DefaultPasteTo(IEntityFilter filter)
+        {
+            if (filter != null)
+            {
+                filter.CopyFrom(RestrictedEntityManager.defaultSettings);
+            }
+        }
 
         public RestrictedEntityManager(Map map) : base(map) { }
 
@@ -20,7 +36,7 @@ namespace StockpileForDisaster
 #endif
             if (!this.sectionFlag)
             {
-                Log.Error(DebugLog.GetMethodName() + "Section is not closing");
+                Log.ErrorOnce(DebugLog.GetMethodName() + "Section is not closed", errorKey);
                 return;
             }
             this.sectionFlag = false;
@@ -39,7 +55,7 @@ namespace StockpileForDisaster
         {
             if (this.sectionFlag)
             {
-                Log.Error(DebugLog.GetMethodName() + "Section is not starting");
+                Log.ErrorOnce(DebugLog.GetMethodName() + "Section is not started", errorKey + 1);
                 return;
             }
             this.sectionFlag = true;
@@ -84,6 +100,7 @@ namespace StockpileForDisaster
         }
         public override void ExposeData()
         {
+            defaultSettings.ExposeData();
             base.ExposeData();
         }
     }

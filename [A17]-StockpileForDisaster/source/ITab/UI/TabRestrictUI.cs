@@ -11,12 +11,13 @@ namespace StockpileForDisaster
         {
             Widgets.DrawMenuSection(baseRect, true);
 
+            TabRestrictUI.DrawDefaultSettingButton(filter, ref baseRect);
             TabRestrictUI.DrawHeadingCheckBox(filter, label, description, ref baseRect);
+
             Text.Font = GameFont.Tiny;
             
             float num = baseRect.width - 2f;
             Rect buttonRect1 = new Rect(baseRect.x + 1f, baseRect.y + 1f, num / 2f, 24f);
-
             if (Widgets.ButtonText(buttonRect1, "ClearAll".Translate(), true, false, true))
             {
                 filter.SetAllowAll(root, false);
@@ -47,6 +48,17 @@ namespace StockpileForDisaster
             }
             Widgets.EndScrollView();
         }
+        private static void DrawDefaultSettingButton(IEntityFilter filter, ref Rect baseRect)
+        {
+            Text.Font = GameFont.Tiny;
+            float btHeight = 24f;
+            Rect buttonRect1 = new Rect(baseRect.x, baseRect.y - btHeight - 2f, 160f , 24f);
+            if(Widgets.ButtonText(buttonRect1, "DefaultEntityListSettingsButton".Translate(), true, false, true))
+            {
+                RestrictedEntityManager.DefaultCopyFrom(filter);
+            }
+        }
+
         private static void DrawHeadingCheckBox(IEntityFilter filter, string label, string description, ref Rect baseRect)
         {
             Text.Font = GameFont.Medium;
