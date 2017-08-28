@@ -208,8 +208,6 @@ UpgradeLog*.htm
 *.bim.layout
 *.bim_*.settings
 
-# Microsoft Fakes
-FakesAssemblies/
 
 # GhostDoc plugin setting file
 *.GhostDoc.xml
