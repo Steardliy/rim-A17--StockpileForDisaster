@@ -2,8 +2,8 @@
 
 <Patch>
 
- <!-- Vanilla ///////////////////////////////////// -->
- 	<Operation Class="PatchOperationAdd">
+ <!-- For Vanilla ///////////////////////////////////// -->
+ 	<!-- <Operation Class="PatchOperationAdd">
         <xpath>*/ThingDef[defName="Shelf"]/inspectorTabs</xpath>
         <Value><li>StockpileForDisaster.ITab_Restrict</li></Value>
 	</Operation>
@@ -34,7 +34,7 @@
 				</canDisplayCategorys>
 			</li>
 		</Value>
-	</Operation>
+	</Operation> -->
 
 
 
