@@ -39,6 +39,14 @@ namespace StockpileForDisaster
             }
         }
 
+        public override IEnumerable<Gizmo> CompGetGizmosExtra()
+        {
+            foreach (var a in CopyPasteRestrictionSetting.CopyPasteRestrictSettingsGizmo(this.filter))
+            {
+                yield return a;
+            }
+        }
+
         public void UpdateThingsList()
         {
             EntityCategory root = entityCategoryRoot;
